@@ -18,12 +18,34 @@
             <li><a href="">Contemporary</a></li>
             <li><a href="">Affordable</a></li>
         </ul>
-        <button type="button"><span></span>e</button>
+        <button type="button" onclick="toggleBtn()" id="Btn" >  <span></span>e</button>
     </nav> 
     <div class="lamp-container">
         <img src="images/lamp.png" class="lamp">
-        <img src="images/light.png" class="light">
+        <img src="images/light.png" class="light" id="light">
+    </div>
+    <div class="text-container">
+        <h1>Latest <br> in Lighting</h1>
+        <p>This is the fast lamp made by me. <br> I will make more for home and Office .</p>
+        <a href="">Check all colection</a>
+        <div class="control">
+            <p>04</p>
+            <div class="line"><span></span></div>
+
+            <p>05</p>
+        </div>
     </div>
 </div>
+
+<script>
+    var Btn =document.getElementById("Btn");
+    var light =document.getElementById("light");
+    function toggleBtn(){
+        Btn.classList.toggle("active")
+        light.classList.toggle("on")
+    }
+</script>
+
+
 </body>
 </html>
